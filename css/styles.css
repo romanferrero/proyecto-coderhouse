@@ -1,0 +1,469 @@
+/* Paleta de colores */
+/*
+#1B3C53 Azul oscuro
+#456882 Azul más claro
+#D2C1B6 Beige
+#F9F3EF Beige más claro
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/**{
+    border: .5px solid red;
+}*/
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    color: #F9F3EF;
+}
+
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+    color: #1B3C53;
+}
+
+h3 {
+    font-family: "Lato", sans-serif;
+    color: #1B3C53;
+}
+
+h4 {
+    font-family: "Lato", sans-serif;
+    color: #456882;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    color: #456882;
+}
+
+header {
+    font-family: "Lato", sans-serif;
+    background-color: #1B3C53;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header a img.logo {
+    width: 45px;
+    margin-right: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner {
+    color: #F9F3EF;
+    background-image: url(../medios/banner1.jpg);
+    background-size: cover;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.banner h2 {
+    color: #F9F3EF;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.redes-sociales ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.redes-sociales img {
+    width: 40px;
+    height: auto;
+}
+
+.redes-sociales img:hover {
+    transform: scale(1.2);
+}
+
+
+/* presentacion */
+.presentacion {
+    background: #F9F3EF;
+    padding: 28px 16px;
+    max-width: 1100px;
+    margin: 0 auto 28px;
+    border-radius: 12px;
+    box-shadow: 0 1px 0 rgba(27, 60, 83, .03);
+}
+
+.resumen {
+    background: #D2C1B6;
+    padding: 28px 16px;
+    max-width: 1100px;
+    margin: 0 auto 28px;
+    border-radius: 12px;
+    box-shadow: 0 1px 0 rgba(27, 60, 83, .03);
+}
+
+.auspiciadores {
+    background: #F9F3EF;
+    padding: 28px 16px;
+    max-width: 1100px;
+    margin: 0 auto 28px;
+    border-radius: 12px;
+    box-shadow: 0 1px 0 rgba(27, 60, 83, .03);
+}
+
+/* transmisiones */
+/*  secciones centradas */
+#youtube,
+#tweets,
+#clips,
+#podcasts,
+#galeria {
+    padding-inline: 16px;
+}
+
+#youtube .contenedor-videos,
+#tweets .contenedor-tweets,
+#clips .contenedor-clips {
+    max-width: 1100px;
+    /* límite para que nada se haga gigante */
+    margin: 0 auto;
+    /* centrado */
+}
+
+#youtube .contenedor-videos {
+    display: grid;
+    gap: 18px;
+    /* espacio entre videos */
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+
+/* Iframes responsivos 16:9 */
+#youtube .contenedor-videos iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 0;
+    border-radius: 12px;
+    /* esquinas suaves */
+    display: block;
+}
+
+/* tweets más chicos, ordenados y con espacio */
+#tweets .contenedor-tweets {
+    display: grid;
+    gap: 16px;
+    /* espacio entre tweets */
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    align-items: start;
+    /* alinear el tope para alturas distintas */
+}
+
+/* sacar márgenes grandes por defecto del blockquote y centrar cada tarjeta */
+#tweets .twitter-tweet {
+    margin: 0 auto !important;
+    /* centra dentro de su columna */
+    max-width: 100% !important;
+    /* no exceder columna */
+}
+
+/* Cuando X inserta el iframe, forzamos que respete el ancho de columna */
+#tweets .contenedor-tweets iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+#clips .contenedor-clips {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+
+#podcasts .contenedor-podcasts {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#galeria .contenedor-galeria {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+}
+
+/* footer */
+.footer {
+    background-color: #1B3C53;
+    color: #F9F3EF;
+    width: 100%;
+}
+
+.footer p {
+    color: #F9F3EF;
+}
+
+.footer-contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 28px 16px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+}
+
+.footer-links,
+.footer-redes {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.footer a {
+    font-family: "Lato", sans-serif;
+    color: #F9F3EF;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color .2s ease, opacity .2s ease;
+}
+
+.footer a:hover,
+.footer a:focus {
+    border-color: #F9F3EF;
+    opacity: .9;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(249, 243, 239, .15);
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: "Lato", sans-serif;
+    opacity: .9;
+}
+
+.to-top {
+    font-size: .95rem;
+}
+
+/* suaviza el scroll del "Volver arriba" */
+html {
+    scroll-behavior: smooth;
+}
+
+/*  contacto */
+.contacto {
+    background: #F9F3EF;
+    padding: 28px 16px;
+}
+
+.contacto h2 {
+    font-family: "Bebas Neue", sans-serif;
+    color: #1B3C53;
+    text-align: left;
+    margin: 0 0 16px;
+}
+
+.formulario-contacto {
+    max-width: 680px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.formulario-contacto label {
+    font-family: "Lato", sans-serif;
+    color: #1B3C53;
+    font-weight: 600;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    color: #1B3C53;
+    padding: 12px 14px;
+    border: 1.5px solid #D2C1B6;
+    border-radius: 10px;
+    background: #fff;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.formulario-contacto textarea {
+    min-height: 140px;
+    max-height: 200px;
+    max-width: none;
+    resize: vertical;
+}
+
+.formulario-contacto input::placeholder,
+.formulario-contacto textarea::placeholder {
+    color: #456882;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    outline: none;
+    border-color: #456882;
+    box-shadow: 0 0 0 3px rgba(69, 104, 130, .15);
+}
+
+/* expedicion */
+.expedicion {
+    padding: 28px 16px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.expedicion h2 {
+    font-family: "Bebas Neue", sans-serif;
+    color: #1B3C53;
+    margin: 0 0 10px;
+}
+
+.expedicion p {
+    font-family: "Lato", sans-serif;
+    color: #456882;
+    margin: 0;
+}
+
+.team {
+    padding: 28px 16px;
+    background: #F9F3EF;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+    align-items: start;
+}
+
+/* titulos ocupan todo el ancho del grid */
+.team h2,
+.team h3,
+.team>h4 {
+    grid-column: 1 / -1;
+}
+
+.team h2 {
+    font-family: "Bebas Neue", sans-serif;
+    color: #1B3C53;
+    margin: 0 0 8px;
+}
+
+.team h3 {
+    font-family: "Lato", sans-serif;
+    color: #1B3C53;
+    margin: 8px 0 6px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #D2C1B6;
+    /* subrayado */
+}
+
+.team>h4 {
+    font-family: "Lato", sans-serif;
+    color: #456882;
+    margin: 4px 0 0;
+}
+
+/* tarjetas de los cientificos */
+.team article {
+    background: #ffffff;
+    border: 1.5px solid #D2C1B6;
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 1px 0 rgba(27, 60, 83, .03);
+    transition: transform .1s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+/* nombres dentro del article */
+.team article h4 {
+    font-family: "Lato", sans-serif;
+    color: #1B3C53;
+    margin: 0 0 4px;
+}
+
+/* roles */
+.team article p {
+    font-family: "Lato", sans-serif;
+    color: #456882;
+    margin: 0;
+}
+
+.falkor {
+    background: #D2C1B6;
+    padding: 28px 16px;
+    max-width: 1100px;
+    margin: 0 auto 28px;
+    border-radius: 12px;
+    box-shadow: 0 1px 0 rgba(27, 60, 83, .03);
+}
+
+.falkor img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.rov {
+    background: #F9F3EF;
+    padding: 28px 16px;
+    max-width: 1100px;
+    margin: 0 auto 28px;
+    border-radius: 12px;
+    box-shadow: 0 1px 0 rgba(27, 60, 83, .03);
+}
+
+.rov img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+}
