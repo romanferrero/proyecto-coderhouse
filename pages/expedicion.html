@@ -4,26 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uruguay Sub200</title>
+    <title>Uruguay Sub200 - Expedición</title>
     <link rel="icon" href="../medios/logo2.png" type="image/png" />
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
     <!--  Encabezado del sitio  -->
-    <header>
-        <!--  Logo   -->
-        <a href="../index.html"><img class="logo" src="../medios/logo2.png" alt="Logo Uruguay Sub200"></a>
-        <!--  Menú de navegación   -->
+    <header role="banner">
+        <a class="logo-link" href="../index.html" aria-label="Ir al inicio">
+            <img class="logo" src="../medios/logo2.png" alt="Logo Uruguay Sub200" />
+        </a>
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./expedicion.html">Expedicion</a></li>
+                <li><a href="./expedicion.html" aria-current="page">Expedición</a></li>
                 <li><a href="./transmisiones.html">Transmisiones</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="expedicion">
             <h2>Expedicion</h2>
@@ -119,7 +120,7 @@
                 Además, ofrece 8 laboratorios, incluidos un laboratorio principal de 105 metros cuadrados, laboratorios
                 húmedos, un laboratorio científico de agua de mar, un laboratorio de electrónica informática, un
                 laboratorio de robótica y un laboratorio frío para trabajo biológico</p>
-            <img src="../medios/BIFalkor.jpeg" alt="B/I Falkor (too)">
+            <img src="../medios/BIFalkor.jpeg" alt="B/I Falkor (too)" loading="lazy">
         </section>
 
         <section class="rov">
@@ -130,28 +131,25 @@
                 capacitado a bordo del Falkor (too) y se utiliza para explorar y estudiar los ecosistemas marinos
                 profundos, recolectar muestras biológicas y geológicas, y capturar imágenes impresionantes del fondo
                 marino.</p>
-            <img src="../medios/ROV2.jpg" alt="Submarino Remotamente Operado (ROV)">
+            <img src="../medios/ROV2.jpg" alt="Submarino Remotamente Operado (ROV)" loading="lazy">
         </section>
     </main>
     <!--  Pie de página  -->
     <footer class="footer" id="footer">
-        <div class="footer-contenedor">
-            <!-- Marca -->
-            <p>Revelando misterios del fondo marino uruguayo.</p>
-            <!-- Redes -->
-            <div class="footer-redes" aria-label="Redes sociales">
-                <a href="https://www.facebook.com/hashtag/uruguaysub200" target="_blank" rel="noopener">Facebook</a>
-                <a href="https://www.instagram.com/uruguaysub200/" target="_blank" rel="noopener">Instagram</a>
-                <a href="https://youtube.com/SchmidtOcean" target="_blank" rel="noopener">YouTube</a>
-                <a href="https://x.com/SchmidtOcean" target="_blank" rel="noopener">X</a>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <small>Sitio no oficial Uruguay Sub200 | © Roman Ferrero</small>
-            <a class="to-top" href="#top">Volver arriba ↑</a>
-        </div>
-    </footer>
+    <div class="footer-contenedor">
+      <p>Revelando misterios del fondo marino uruguayo.</p>
+      <div class="footer-redes" aria-label="Redes sociales">
+        <a href="https://www.facebook.com/hashtag/uruguaysub200" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/uruguaysub200/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://youtube.com/SchmidtOcean" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://x.com/SchmidtOcean" target="_blank" rel="noopener">X</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <small>Sitio no oficial Uruguay Sub200 | © Roman Ferrero</small>
+      <a class="to-top" href="#top">Volver arriba ↑</a>
+    </div>
+  </footer>
 </body>
 
 </html>
