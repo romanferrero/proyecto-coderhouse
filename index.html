@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uruguay Sub200</title>
+    <link rel="icon" href="./medios/logo2.png" type="image/png" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body id="top">
+<body id="top" data-page="inicio">
     <!--  Encabezado del sitio  -->
     <header>
-        <!--  Logo   -->
         <a href="#"><img class="logo" src="./medios/logo2.png" alt="Logo Uruguay Sub200"></a>
         <!--  Menú de navegación   -->
         <nav>
@@ -23,11 +23,12 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="contenido">
         <!--  banner -->
-        <section class="banner">
+        <section class="banner" aria-label="Portada Uruguay Sub200">
+            <div class="banner__overlay"></div>
             <h1>Uruguay Sub200</h1>
-            <h2>Explorando los secretos del mar urugayo</h2>
+            <h2>Explorando los secretos del mar uruguayo</h2>
         </section>
 
         <!-- seccion de presentacion -->
@@ -45,8 +46,8 @@
             <p>Contenido de la sección secundaria.</p>
         </section>
 
-        <section class="auspiciadores">
-            <h2>Organizan y colaboran:</h2>
+        <section class="auspiciadores" aria-labelledby="org-colab">
+            <h2 id="org-colab">Organizan y colaboran</h2>
             <p>(Marcas y colaboradores).</p>
         </section>
 
@@ -55,14 +56,17 @@
     <!--  Pie de página  -->
     <footer class="footer" id="footer">
         <div class="footer-contenedor">
-            <!-- Marca -->
             <p>Revelando misterios del fondo marino uruguayo.</p>
             <!-- Redes -->
             <div class="footer-redes" aria-label="Redes sociales">
-                <a href="https://www.facebook.com/hashtag/uruguaysub200" target="_blank" rel="noopener">Facebook</a>
-                <a href="https://www.instagram.com/uruguaysub200/" target="_blank" rel="noopener">Instagram</a>
-                <a href="https://youtube.com/SchmidtOcean" target="_blank" rel="noopener">YouTube</a>
-                <a href="https://x.com/SchmidtOcean" target="_blank" rel="noopener">X</a>
+                <a href="https://www.facebook.com/hashtag/uruguaysub200" target="_blank" rel="noopener"
+                    aria-label="Facebook Uruguay Sub200">Facebook</a>
+                <a href="https://www.instagram.com/uruguaysub200/" target="_blank" rel="noopener"
+                    aria-label="Instagram Uruguay Sub200">Instagram</a>
+                <a href="https://youtube.com/SchmidtOcean" target="_blank" rel="noopener"
+                    aria-label="YouTube Schmidt Ocean">YouTube</a>
+                <a href="https://x.com/SchmidtOcean" target="_blank" rel="noopener"
+                    aria-label="Perfil en X Schmidt Ocean">X</a>
             </div>
         </div>
 
