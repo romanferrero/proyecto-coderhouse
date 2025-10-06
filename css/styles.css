@@ -1,11 +1,3 @@
-/* Paleta de colores */
-/*
-#1B3C53 Azul oscuro
-#456882 Azul más claro
-#D2C1B6 Beige
-#F9F3EF Beige más claro
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 :root{
@@ -131,6 +123,144 @@ nav a[aria-current="page"], nav a:hover{
     color: var(--beige-claro);
     font-size: 1.5rem;
     padding-bottom: 0px 0px 20px;
+}
+
+/*Auspiciantes*/
+.auspiciadores{
+  max-width: var(--container, 1100px);
+  margin: 0 auto 28px;
+  padding: 28px 16px;
+  text-align: center;                            
+  background: var(--beige-claro, #F9F3EF);
+  border-radius: var(--radius, 12px);
+  box-shadow: var(--shadow, 0 1px 0 rgba(27,60,83,.03));
+}
+
+.auspiciadores h2{
+  margin: 0 0 10px;
+  color: var(--azul-oscuro, #1B3C53);
+}
+
+.auspiciadores h3{
+  margin: 18px 0 12px;
+  color: var(--azul, #456882);
+  font-size: 1.05rem;
+}
+
+.auspiciadores .logos-grid{
+  gap: clamp(16px, 2.5vw, 28px);          
+  margin-bottom: clamp(12px, 2vw, 24px); 
+}
+
+.auspiciadores .logos-grid img{
+  padding: clamp(10px, 1.2vw, 16px);   
+}
+
+.logos-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 150px)); 
+  justify-content: center;       
+  gap: 12px;
+}
+
+.logos-grid--destacados{
+  grid-template-columns: repeat(auto-fit, minmax(140px, 170px));
+}
+
+.logos-grid img{
+  width: 100%;
+  aspect-ratio: 3 / 2;          
+  object-fit: contain;            
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 1px 0 rgba(0,0,0,.03);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.logos-grid img:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,.06);
+}
+
+
+.resumen{
+  background: var(--beige, #D2C1B6);
+  padding: 28px 16px;
+  max-width: var(--container, 1100px);
+  margin: 0 auto 28px;
+  border-radius: var(--radius, 12px);
+  box-shadow: var(--shadow, 0 1px 0 rgba(27,60,83,.03));
+}
+
+.resumen h2{
+  margin: 0 0 14px;
+  color: var(--azul-oscuro, #1B3C53);
+}
+
+.resumen__intro{
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: clamp(14px, 3vw, 28px);
+  align-items: center;
+  margin-bottom: clamp(16px, 3vw, 28px);
+}
+.resumen__intro p{ margin: 0; color: var(--text, #456882); }
+.resumen__media{
+  margin: 0; 
+}
+.resumen__media img{
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+
+/* Tarjetitas: 3 columnas (auto), centradas y con aire */
+.resumen__grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: clamp(14px, 2.4vw, 22px);
+  justify-items: stretch;
+  align-items: start;
+}
+
+.resumen__card{
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: 0 1px 0 rgba(0,0,0,.03);
+  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+}
+.resumen__card:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,.06);
+  border-color: rgba(0,0,0,.10);
+}
+.resumen__card h3,
+.resumen__card h4{
+  margin: 0 0 6px;
+  color: var(--azul, #456882);
+  font-size: 1.05rem;
+}
+.resumen__card p{
+  margin: 0;
+  color: var(--text, #456882);
+  line-height: 1.55;
+}
+
+/* Bloque “¿Por qué exploramos?” */
+.resumen__why{
+  margin-top: clamp(16px, 3vw, 28px);
+}
+.resumen__why > h3{
+  margin: 0 0 10px;
+  color: var(--azul-oscuro, #1B3C53);
+  font-size: 1.15rem;
 }
 
 /* Secciones comunes */
