@@ -4,23 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uruguay Sub200</title>
+    <title>Uruguay Sub200 - Contacto</title>
     <link rel="icon" href="../medios/logo2.png" type="image/png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
     <!--  Encabezado del sitio  -->
     <header>
-        <!--  Logo   -->
-        <a href="../index.html"><img class="logo" src="../medios/logo2.png" alt="Logo Uruguay Sub200"></a>
+        <a class="logo-link" href="../index.html" aria-label="Ir al inicio">
+            <img class="logo" src="../medios/logo2.png" alt="Logo Uruguay Sub200" />
+        </a>
         <!--  Menú de navegación   -->
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./expedicion.html">Expedicion</a></li>
+                <li><a href="./expedicion.html">Expedición</a></li>
                 <li><a href="./transmisiones.html">Transmisiones</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./contacto.html" aria-current="page">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -28,53 +31,40 @@
         <section class="contacto">
             <h2>Contacto</h2>
             <!-- Formulario de contacto -->
-            <form action="#" method="post" class="formulario-contacto">
+            <form action="#" method="post" class="formulario-contacto" novalidate>
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <input type="text" id="nombre" name="nombre" autocomplete="name" placeholder="Tu nombre" required />
 
                 <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="tu@correo.com" required />
 
                 <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿En qué te podemos ayudar?"
+                    required></textarea>
 
                 <button type="submit">Enviar</button>
             </form>
         </section>
 
         <!-- seccion redes sociales -->
-        <section class="redes-sociales">
-            <h2>Seguinos en nuestras redes</h2>
+        <section class="redes-sociales" aria-labelledby="seguinos">
+            <h2 id="seguinos">Seguinos en nuestras redes</h2>
             <ul>
-                <li>
-                    <a href="https://www.facebook.com/hashtag/uruguaysub200" target="_blank">
-                        <img src="../medios/logoFacebook.png" alt="Facebook">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/uruguaysub200/" target="_blank">
-                        <img src="../medios/logoInstagram.png" alt="Instagram">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://x.com/SchmidtOcean" target="_blank">
-                        <img src="../medios/logoX.png" alt="X">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://youtube.com/SchmidtOcean" target="_blank">
-                        <img src="../medios/logoYoutube.png" alt="YouTube">
-                    </a>
-                </li>
+                <li><a href="https://www.facebook.com/hashtag/uruguaysub200" target="_blank" rel="noopener"><img
+                            src="../medios/logoFacebook.png" alt="Facebook Uruguay Sub200" loading="lazy" /></a></li>
+                <li><a href="https://www.instagram.com/uruguaysub200/" target="_blank" rel="noopener"><img
+                            src="../medios/logoInstagram.png" alt="Instagram Uruguay Sub200" loading="lazy" /></a></li>
+                <li><a href="https://x.com/SchmidtOcean" target="_blank" rel="noopener"><img src="../medios/logoX.png"
+                            alt="X Schmidt Ocean" loading="lazy" /></a></li>
+                <li><a href="https://youtube.com/SchmidtOcean" target="_blank" rel="noopener"><img
+                            src="../medios/logoYoutube.png" alt="YouTube Schmidt Ocean" loading="lazy" /></a></li>
             </ul>
         </section>
     </main>
     <!--  Pie de página  -->
     <footer class="footer" id="footer">
         <div class="footer-contenedor">
-            <!-- Marca -->
             <p>Revelando misterios del fondo marino uruguayo.</p>
-            <!-- Redes -->
             <div class="footer-redes" aria-label="Redes sociales">
                 <a href="https://www.facebook.com/hashtag/uruguaysub200" target="_blank" rel="noopener">Facebook</a>
                 <a href="https://www.instagram.com/uruguaysub200/" target="_blank" rel="noopener">Instagram</a>
@@ -82,12 +72,14 @@
                 <a href="https://x.com/SchmidtOcean" target="_blank" rel="noopener">X</a>
             </div>
         </div>
-
         <div class="footer-bottom">
             <small>Sitio no oficial Uruguay Sub200 | © Roman Ferrero</small>
             <a class="to-top" href="#top">Volver arriba ↑</a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
