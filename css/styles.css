@@ -123,30 +123,62 @@ p {
     filter: brightness(1.8);
 }
 
-.banner {
-    position: relative;
-    color: var(--beige-claro);
-    background-image: url(../medios/banner1.jpg);
-    background-size: cover;
-    background-position: center;
-    text-align: center;
+/*heroes carousel*/
+.hero-carousel {
+  position: relative;
+  max-width: 100%;
 }
 
-.banner h1,
-.banner h2 {
-    position: relative;
-    margin: 0;
+.hero-carousel .carousel-item {
+  height: clamp(320px, 60vh, 680px);
 }
 
-.banner h1 {
-    font-size: 2.5rem;
-    padding: 26px 10px 10px;
+.hero-carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: brightness(0.58);
 }
 
-.banner h2 {
-    color: var(--beige-claro);
-    font-size: 1.5rem;
-    padding-bottom: 0px 0px 20px;
+.hero-caption {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 16px;
+  color: var(--beige-claro);
+  text-shadow: 0 2px 10px rgba(0,0,0,.35);
+}
+
+.hero-caption h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  color: var(--beige-claro);
+  letter-spacing: .5px;
+  font-weight: 700;
+}
+
+.hero-caption h2 {
+  margin: 6px 0 0;
+  color: var(--beige-claro);
+  font-size: clamp(1.5rem, 2.4vw, 1.25rem);
+  opacity: .95;
+}
+
+.hero-carousel .carousel-indicators [data-bs-target] {
+  background-color: var(--beige-claro);
+  opacity: .6;
+}
+.hero-carousel .carousel-indicators .active {
+  opacity: 1;
+}
+
+.hero-carousel .carousel-control-prev-icon,
+.hero-carousel .carousel-control-next-icon {
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,.4));
 }
 
 /*Auspiciantes*/
