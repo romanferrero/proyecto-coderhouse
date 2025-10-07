@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uruguay Sub200 - Transmisiones</title>
-    <link rel="icon" href="../medios/logo2.png" type="image/png" />
+    <link rel="icon" href="../medios/logo6.png" type="image/png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
@@ -14,19 +14,30 @@
 <body>
     <!--  Encabezado del sitio  -->
     <header role="banner">
-        <a class="logo-link" href="../index.html" aria-label="Ir al inicio">
-            <img class="logo" src="../medios/logo2.png" alt="Logo Uruguay Sub200" />
-        </a>
-        <!--  Menú de navegación   -->
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./expedicion.html">Expedición</a></li>
-                <li><a href="./transmisiones.html" aria-current="page">Transmisiones</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid" style="max-width: var(--container);">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+                    <img src="../medios/logo4.png" alt="Logo Uruguay Sub200">
+                    <span class="fw-semibold">U-Sub200</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="expedicion.html">Expedición</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="transmisiones.html">Transmisiones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
+
     <main>
         <!-- seccion de transmisiones de YouTube -->
         <section id="youtube">
