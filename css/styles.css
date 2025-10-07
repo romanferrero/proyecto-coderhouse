@@ -361,6 +361,57 @@ p {
 }
 
 /* transmisiones */
+/* componente Card */
+.card-media {
+  border: 1.5px solid var(--beige);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  background: #fff;
+}
+
+.card-media .card-title {
+  color: var(--azul-oscuro);
+  font-weight: 700;
+}
+
+.card-media .btn-outline-primary {
+  --bs-btn-color: var(--azul);
+  --bs-btn-border-color: var(--azul);
+  --bs-btn-hover-bg: var(--azul);
+  --bs-btn-hover-border-color: var(--azul);
+  --bs-btn-active-bg: var(--azul);
+  --bs-btn-active-border-color: var(--azul);
+  color: var(--azul);
+  border-color: var(--azul);
+}
+
+.card,
+.card-media {
+  transition: transform .12s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.card:hover,
+.card:focus-within,
+.card-media:hover,
+.card-media:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+  border-color: rgba(0,0,0,.10);
+}
+
+#youtube h2, #tweets h2, #clips h2, #podcasts h2, #galeria h2 {
+  margin: 0 0 8px;
+}
+
+#youtube .contenedor-videos,
+#tweets .contenedor-tweets,
+#clips .contenedor-clips,
+#podcasts .contenedor-podcasts,
+#galeria .contenedor-galeria {
+  display: initial !important; /* ahora uso el grid de Bootstrap */
+}
+
 /*  secciones centradas */
 #youtube,
 #tweets,
