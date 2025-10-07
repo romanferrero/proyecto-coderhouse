@@ -19,9 +19,11 @@
 html{
     scroll-behavior:smooth
 }
+
 html,body{
     height:100%
 }
+
 body{
   margin:0;
   display:flex;
@@ -49,6 +51,7 @@ h2 {
     font-family: "Bebas Neue", sans-serif;
     color:var(--azul-oscuro);
 }
+
 h3, h4, p, li, button, label, input, textarea, a {
     font-family: "Lato", system-ui, sans-serif;
 }
@@ -131,7 +134,7 @@ nav a[aria-current="page"], nav a:hover{
   margin: 0 auto 28px;
   padding: 28px 16px;
   text-align: center;                            
-  background: var(--beige-claro, #F9F3EF);
+  background: none;
   border-radius: var(--radius, 12px);
   box-shadow: var(--shadow, 0 1px 0 rgba(27,60,83,.03));
 }
@@ -179,14 +182,17 @@ nav a[aria-current="page"], nav a:hover{
   transition: transform .12s ease, box-shadow .12s ease;
 }
 
-.logos-grid img:hover{
-  transform: translateY(-1px);
-  box-shadow: 0 6px 14px rgba(0,0,0,.06);
+.logos-grid img:hover,
+.logos-grid img:focus-visible{
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 10px 24px rgba(0,0,0,.12);
+  border-color: var(--azul);
+  filter: saturate(1.05);
+  outline: none;
 }
 
-
 .resumen{
-  background: var(--beige, #D2C1B6);
+  background: none;
   padding: 28px 16px;
   max-width: var(--container, 1100px);
   margin: 0 auto 28px;
@@ -206,10 +212,15 @@ nav a[aria-current="page"], nav a:hover{
   align-items: center;
   margin-bottom: clamp(16px, 3vw, 28px);
 }
-.resumen__intro p{ margin: 0; color: var(--text, #456882); }
+
+.resumen__intro p{
+    margin: 0; color: var(--text, #456882);
+}
+
 .resumen__media{
   margin: 0; 
 }
+
 .resumen__media img{
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -219,7 +230,6 @@ nav a[aria-current="page"], nav a:hover{
   box-shadow: 0 6px 18px rgba(0,0,0,.06);
 }
 
-/* Tarjetitas: 3 columnas (auto), centradas y con aire */
 .resumen__grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -236,27 +246,30 @@ nav a[aria-current="page"], nav a:hover{
   box-shadow: 0 1px 0 rgba(0,0,0,.03);
   transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
 }
+
 .resumen__card:hover{
   transform: translateY(-1px);
   box-shadow: 0 6px 16px rgba(0,0,0,.06);
   border-color: rgba(0,0,0,.10);
 }
+
 .resumen__card h3,
 .resumen__card h4{
   margin: 0 0 6px;
   color: var(--azul, #456882);
   font-size: 1.05rem;
 }
+
 .resumen__card p{
   margin: 0;
   color: var(--text, #456882);
   line-height: 1.55;
 }
 
-/* Bloque “¿Por qué exploramos?” */
 .resumen__why{
   margin-top: clamp(16px, 3vw, 28px);
 }
+
 .resumen__why > h3{
   margin: 0 0 10px;
   color: var(--azul-oscuro, #1B3C53);
@@ -270,14 +283,7 @@ nav a[aria-current="page"], nav a:hover{
   margin:0 auto 28px;
   border-radius:var(--radius);
   box-shadow:var(--shadow);
-}
-
-.presentacion, .auspiciadores, .rov {
-  background: var(--beige-claro);
-}
-
-.resumen, .falkor {
-  background: var(--beige);
+  background: none;
 }
 
 .redes-sociales ul {
@@ -349,7 +355,6 @@ nav a[aria-current="page"], nav a:hover{
     /* no exceder columna */
 }
 
-/* Cuando X inserta el iframe, forzamos que respete el ancho de columna */
 #tweets .contenedor-tweets iframe {
     width: 100% !important;
     max-width: 100% !important;
@@ -532,7 +537,6 @@ button {
     margin: 8px 0 6px;
     padding-bottom: 6px;
     border-bottom: 2px solid var(--beige);
-    /* subrayado */
 }
 
 .team>h4 {
@@ -540,8 +544,10 @@ button {
     margin: 4px 0 0;
 }
 
-.team article:hover {
-    transform:translateY(-2px);
+.team article:hover, .team article:focus-within {
+    transform:translateY(-3px);
+    box-shadow:0 12px 26px rgba(0,0,0,.06), 0 0 0 3px rgba(69, 104, 130, .08);
+    border-color: var(--azul);
 }
 
 /* tarjetas de los cientificos */
@@ -568,7 +574,7 @@ button {
 }
 
 .falkor {
-    background: var(--beige);
+    background: none;
     padding: 28px 16px;
     max-width: 1100px;
     margin: 0 auto 28px;
@@ -582,7 +588,7 @@ button {
 }
 
 .rov {
-    background: var(--beige-claro);
+    background: none;
     padding: 28px 16px;
     max-width: 1100px;
     margin: 0 auto 28px;
@@ -594,3 +600,4 @@ button {
     max-width: 40%;
     border-radius: var(--radius);
 }
+
