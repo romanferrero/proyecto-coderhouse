@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uruguay Sub200 - Transmisiones</title>
-    <link rel="icon" href="../medios/logo2.png" type="image/png" />
+    <link rel="icon" href="../medios/logo6.png" type="image/png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
@@ -14,161 +14,318 @@
 <body>
     <!--  Encabezado del sitio  -->
     <header role="banner">
-        <a class="logo-link" href="../index.html" aria-label="Ir al inicio">
-            <img class="logo" src="../medios/logo2.png" alt="Logo Uruguay Sub200" />
-        </a>
-        <!--  Menú de navegación   -->
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./expedicion.html">Expedición</a></li>
-                <li><a href="./transmisiones.html" aria-current="page">Transmisiones</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid" style="max-width: var(--container);">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+                    <img src="../medios/logo4.png" alt="Logo Uruguay Sub200">
+                    <span class="fw-semibold">U-Sub200</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="expedicion.html">Expedición</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="transmisiones.html">Transmisiones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
+
     <main>
         <!-- seccion de transmisiones de YouTube -->
-        <section id="youtube">
-            <h2>Transmisiones en YouTube</h2>
-            <div class="contenedor-videos">
-                <iframe src="https://www.youtube.com/embed/7vmqCc9OJk8?si=8kmGgzgeB-7FWxyp"
-                    title="Transmisión Uruguay Sub200 #1"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        <section id="youtube" class="py-3">
+            <div class="container" style="max-width: var(--container);">
+                <h2 class="mb-3">Transmisiones en YouTube</h2>
 
-                <iframe src="https://www.youtube.com/embed/FS-Tvr3xsTQ?si=eTKITf2QYK-KCBnE"
-                    title="Transmisión Uruguay Sub200 #2"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <div class="card card-media h-100">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/7vmqCc9OJk8?si=8kmGgzgeB-7FWxyp"
+                                    title="Transmisión Uruguay Sub200 #1"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                                    loading="lazy"></iframe>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Transmisión #1</h5>
+                                <p class="card-text small mb-2">Exploración inicial y seteo de equipos.</p>
+                                <a class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener"
+                                    href="https://www.youtube.com/watch?v=7vmqCc9OJk8">Ver en YouTube</a>
+                            </div>
+                        </div>
+                    </div>
 
-                <iframe src="https://www.youtube.com/embed/gkX_0qQbdd0?si=fXfCr_rFFsUFRXX6"
-                    title="Transmisión Uruguay Sub200 #3"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                    <!-- Card 2 -->
+                    <div class="col">
+                        <div class="card card-media h-100">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/FS-Tvr3xsTQ?si=eTKITf2QYK-KCBnE"
+                                    title="Transmisión Uruguay Sub200 #2"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                                    loading="lazy"></iframe>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Transmisión #2</h5>
+                                <p class="card-text small mb-2">Recorrido del área de estudio.</p>
+                                <a class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener"
+                                    href="https://www.youtube.com/watch?v=FS-Tvr3xsTQ">Ver en YouTube</a>
+                            </div>
+                        </div>
+                    </div>
 
-                <iframe src="https://www.youtube.com/embed/VIVK0wckIPU?si=-eamDwNWvrHCLwAf"
-                    title="Transmisión Uruguay Sub200 #4"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                    <!-- Card 3 -->
+                    <div class="col">
+                        <div class="card card-media h-100">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/gkX_0qQbdd0?si=fXfCr_rFFsUFRXX6"
+                                    title="Transmisión Uruguay Sub200 #3"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                                    loading="lazy"></iframe>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Transmisión #3</h5>
+                                <p class="card-text small mb-2">Montículos carbonatados y corales.</p>
+                                <a class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener"
+                                    href="https://www.youtube.com/watch?v=gkX_0qQbdd0">Ver en YouTube</a>
+                            </div>
+                        </div>
+                    </div>
 
-                <iframe src="https://www.youtube.com/embed/OM_q8w_Ob_w?si=ri4k_s2rtsM-VuY0"
-                    title="Transmisión Uruguay Sub200 #5"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                    <!-- Card 4 -->
+                    <div class="col">
+                        <div class="card card-media h-100">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/VIVK0wckIPU?si=-eamDwNWvrHCLwAf"
+                                    title="Transmisión Uruguay Sub200 #4"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                                    loading="lazy"></iframe>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Transmisión #4</h5>
+                                <p class="card-text small mb-2">Biodiversidad en talud continental.</p>
+                                <a class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener"
+                                    href="https://www.youtube.com/watch?v=VIVK0wckIPU">Ver en YouTube</a>
+                            </div>
+                        </div>
+                    </div>
 
-                <iframe src="https://www.youtube.com/embed/hWI1oYUAJ8Y?si=GaIy2IZ_yFjdSIrI"
-                    title="Transmisión Uruguay Sub200 #6"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                    <!-- Card 5 -->
+                    <div class="col">
+                        <div class="card card-media h-100">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/OM_q8w_Ob_w?si=ri4k_s2rtsM-VuY0"
+                                    title="Transmisión Uruguay Sub200 #5"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                                    loading="lazy"></iframe>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Transmisión #5</h5>
+                                <a class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener"
+                                    href="https://www.youtube.com/watch?v=OM_q8w_Ob_w">Ver en YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col">
+                        <div class="card card-media h-100">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/hWI1oYUAJ8Y?si=GaIy2IZ_yFjdSIrI"
+                                    title="Transmisión Uruguay Sub200 #6"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                                    loading="lazy"></iframe>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Transmisión #6</h5>
+                                <a class="btn btn-outline-primary btn-sm" target="_blank" rel="noopener"
+                                    href="https://www.youtube.com/watch?v=hWI1oYUAJ8Y">Ver en YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
         <!-- seccion de tweets -->
-        <section id="tweets">
-            <h2>Tweets destacados</h2>
-            <div class="contenedor-tweets">
-                <blockquote class="twitter-tweet" data-theme="dark">
-                    <p lang="es" dir="ltr">X favor alguein que le ponga el termo abajo del brazo y el mate en el otro <a
-                            href="https://t.co/utGUOFLqTU">pic.twitter.com/utGUOFLqTU</a></p>&mdash; lu
-                    (@lucianapanario) <a
-                        href="https://twitter.com/lucianapanario/status/1961975046726963710?ref_src=twsrc%5Etfw">August
-                        31, 2025</a>
-                </blockquote>
-                <blockquote class="twitter-tweet" data-theme="dark">
-                    <p lang="es" dir="ltr">Te dejo este pulpo imperial<br>Para que empieces tu dia viendo una
-                        majestuosidad<a
-                            href="https://twitter.com/hashtag/UruguaySUB200?src=hash&amp;ref_src=twsrc%5Etfw">#UruguaySUB200</a>
-                        <a href="https://t.co/vwuNS0qkAy">pic.twitter.com/vwuNS0qkAy</a>
-                    </p>&mdash; Juan Hernández
-                    (@ObiJuanKenobi13) <a
-                        href="https://twitter.com/ObiJuanKenobi13/status/1961402623443206434?ref_src=twsrc%5Etfw">August
-                        29, 2025</a>
-                </blockquote>
-                <blockquote class="twitter-tweet" data-theme="dark">
-                    <p lang="es" dir="ltr">🔴AHORA | <a
-                            href="https://twitter.com/hashtag/URUGUAYSUB200?src=hash&amp;ref_src=twsrc%5Etfw">#URUGUAYSUB200</a><br><br>⚓️
-                        ¡El equipo científico encontró el naufragio del Destructor ROU “Uruguay” (DE-1)! En 1995, este
-                        buque fue hundido en una misión dispuesta por la Armada Nacional.<br><br>📽️ Prendé ya la
-                        transmisión en vivo de <a
-                            href="https://twitter.com/SchmidtOcean?ref_src=twsrc%5Etfw">@SchmidtOcean</a>: <a
-                            href="https://t.co/rfGZiktg0w">https://t.co/rfGZiktg0w</a> <a
-                            href="https://t.co/AV4rL7vjQE">pic.twitter.com/AV4rL7vjQE</a></p>&mdash; Universidad de la
-                    República (@Udelaruy) <a
-                        href="https://twitter.com/Udelaruy/status/1961508757743309233?ref_src=twsrc%5Etfw">August 29,
-                        2025</a>
-                </blockquote>
+        <section id="tweets" class="py-3">
+            <div class="container" style="max-width: var(--container);">
+                <h2 class="mb-3">Tweets destacados</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <blockquote class="twitter-tweet" data-theme="dark">
+                                    <p lang="es" dir="ltr">X favor alguein que le ponga el termo...</p>&mdash; lu
+                                    (@lucianapanario) <a
+                                        href="https://twitter.com/lucianapanario/status/1961975046726963710?ref_src=twsrc%5Etfw">August
+                                        31, 2025</a>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <blockquote class="twitter-tweet" data-theme="dark">
+                                    <p lang="es" dir="ltr">Te dejo este pulpo imperial...</p>&mdash; Juan Hernández
+                                    (@ObiJuanKenobi13) <a
+                                        href="https://twitter.com/ObiJuanKenobi13/status/1961402623443206434?ref_src=twsrc%5Etfw">August
+                                        29, 2025</a>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <blockquote class="twitter-tweet" data-theme="dark">
+                                    <p lang="es" dir="ltr">🔴AHORA | #URUGUAYSUB200 ...</p>&mdash; Universidad de la
+                                    República (@Udelaruy)
+                                    <a
+                                        href="https://twitter.com/Udelaruy/status/1961508757743309233?ref_src=twsrc%5Etfw">August
+                                        29, 2025</a>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </section>
 
         <!-- seccion de tiktoks o clips -->
-        <section id="clips">
-            <h2>Clips y videos cortos</h2>
-            <div class="contenedor-clips">
-                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@elpaisuy/video/7546268522406694149"
-                    data-video-id="7546268522406694149" style="max-width: 605px;min-width: 325px;">
-                    <section> <a target="_blank" title="@elpaisuy"
-                            href="https://www.tiktok.com/@elpaisuy?refer=embed">@elpaisuy</a>
-                        <p>La expedición Uruguay Sub 200 a bordo del buque Falkor (too) desciende este jueves cerca de
-                            la cabecera del cañón submarino de José Ignacio. Es la última expedición del actual equipo
-                            de investigadores que se encuentran a bordo del Falkor (too) de Schmidt Ocean. Este viernes
-                            abordará un nuevo equipo. Se observa el sector central del área de estudio, en el borde
-                            exterior de la Plataforma Continental, a una profundidad entre 225 y 260 metros. Se
-                            caracteriza por la presencia de montículos carbonatados asociados con corales pétreos
-                            (Desmophyllum pertusum). 🔗 Conocé más en el 𝗹𝗶𝗻𝗸 𝗲𝗻 𝗯𝗶𝗼</p> <a target="_blank"
-                            title="♬ sonido original  - EL PAÍS"
-                            href="https://www.tiktok.com/music/sonido-original-EL-PAÍS-7546268916239108870?refer=embed">♬
-                            sonido original - EL PAÍS</a>
-                    </section>
-                </blockquote>
-                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@udelaruy/video/7541517754726092088"
-                    data-video-id="7541517754726092088" style="max-width: 605px;min-width: 325px;">
-                    <section> <a target="_blank" title="@udelaruy"
-                            href="https://www.tiktok.com/@udelaruy?refer=embed">@udelaruy</a> 🚢 <a
-                            title="UruguaySUB200" target="_blank"
-                            href="https://www.tiktok.com/tag/UruguaySUB200?refer=embed">#UruguaySUB200</a> | Hoy zarpó
-                        el Falkor (too) y el equipo científico ya se encuentra explorando las profundidades marinas de
-                        nuestro país🪸 📽️¡Seguí a @uruguaysub200 en Instagram para enterarte cuando comience la
-                        transmisión en vivo y conocer los secretos que revele el ROV SuBastian! ▶️ Canal del stream:
-                        youtube.com&#47;user&#47;SchmidtOceanVideos Imágenes del video: <a title="schmidtoceaninstitute"
-                            target="_blank"
-                            href="https://www.tiktok.com/tag/schmidtoceaninstitute?refer=embed">#schmidtoceaninstitute</a>
-                        <a target="_blank" title="♬ sonido original - Universidad de la República"
-                            href="https://www.tiktok.com/music/sonido-original-7541517937829317432?refer=embed">♬ sonido
-                            original - Universidad de la República</a>
-                    </section>
-                </blockquote>
+        <section id="clips" class="py-3">
+            <div class="container" style="max-width: var(--container);">
+                <h2 class="mb-3">Clips y videos cortos</h2>
+                <div class="row row-cols-1 row-cols-md-2 g-3">
+                    <div class="col">
+                        <div class="card card-media h-100">
+                            <div class="card-body">
+                                <blockquote class="tiktok-embed"
+                                    cite="https://www.tiktok.com/@elpaisuy/video/7546268522406694149"
+                                    data-video-id="7546268522406694149" style="max-width: 100%; min-width: 260px;">
+                                    <section>…</section>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-media h-100">
+                            <div class="card-body">
+                                <blockquote class="tiktok-embed"
+                                    cite="https://www.tiktok.com/@udelaruy/video/7541517754726092088"
+                                    data-video-id="7541517754726092088" style="max-width: 100%; min-width: 260px;">
+                                    <section>…</section>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script async src="https://www.tiktok.com/embed.js"></script>
             </div>
-            <script async src="https://www.tiktok.com/embed.js"></script>
         </section>
 
         <!-- seccion de podcasts -->
-        <section id="podcasts">
-            <h2>Podcasts</h2>
-            <div class="contenedor-podcasts">
-                <!-- Ejemplo de podcast embebido -->
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/episode/01hiTxcjeBiv0DE1j3srd1/video?utm_source=generator"
-                    width="624" height="351" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
-                <iframe data-testid="embed-iframe" style="border-radius:12px"
-                    src="https://open.spotify.com/embed/episode/4tKJZQVNcj2J68i6XcqDZ3?utm_source=generator" width="50%"
-                    height="352" frameBorder="0" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
+        <section id="podcasts" class="py-3">
+            <div class="container" style="max-width: var(--container);">
+                <h2 class="mb-3">Podcasts</h2>
+                <div class="row row-cols-1 row-cols-md-2 g-3">
+                    <div class="col">
+                        <div class="card card-media h-100">
+                            <div class="ratio ratio-16x9">
+                                <iframe style="border-radius:12px"
+                                    src="https://open.spotify.com/embed/episode/01hiTxcjeBiv0DE1j3srd1/video?utm_source=generator"
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                    loading="lazy"></iframe>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Episodio 1</h5>
+                                <p class="card-text small mb-0">Resumen visual de la expedición.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-media h-100">
+                            <div class="ratio ratio-16x9">
+                                <iframe style="border-radius:12px"
+                                    src="https://open.spotify.com/embed/episode/4tKJZQVNcj2J68i6XcqDZ3?utm_source=generator"
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                    loading="lazy"></iframe>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">Episodio 2</h5>
+                                <p class="card-text small mb-0">Entrevista al equipo científico.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- seccion de galería  -->
-        <section id="galeria">
-            <h2>Galería multimedia</h2>
-            <div class="contenedor-galeria">
-                <img src="../medios/foto1.jpg" alt="Foto tomada por el submarino" loading="lazy">
-                <img src="../medios/foto2.jpg" alt="Foto tomada por el submarino" loading="lazy">
-                <img src="../medios/foto3.jpg" alt="Foto tomada por el submarino" loading="lazy">
-                <img src="../medios/foto4.jpg" alt="Foto tomada por el submarino" loading="lazy">
+        <section id="galeria" class="py-3">
+            <div class="container" style="max-width: var(--container);">
+                <h2 class="mb-3">Galería multimedia</h2>
+
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../medios/foto1.jpg" class="card-img-top" alt="Foto tomada por el submarino">
+                            <div class="card-body py-2">
+                                <p class="card-text small mb-0">Detalle del fondo marino.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../medios/foto2.jpg" class="card-img-top" alt="Foto tomada por el submarino">
+                            <div class="card-body py-2">
+                                <p class="card-text small mb-0">Corales de aguas profundas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../medios/foto3.jpg" class="card-img-top" alt="Foto tomada por el submarino">
+                            <div class="card-body py-2">
+                                <p class="card-text small mb-0">ROV en operación.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="../medios/foto4.jpg" class="card-img-top" alt="Foto tomada por el submarino">
+                            <div class="card-body py-2">
+                                <p class="card-text small mb-0">Muestras y sedimentos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
