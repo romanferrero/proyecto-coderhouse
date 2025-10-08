@@ -968,13 +968,11 @@ p {
 
 
 /*------ MEDIA QUERIES -----------*/
-/* ≤992px (tablets apaisadas / laptops chicas) */
+/* ≤992px  */
 @media (max-width: 992px) {
-  /* Hero: un pelín menos alto para tablets */
   .hero-carousel .carousel-item { height: clamp(300px, 50vh, 560px); }
   .hero-caption { padding: 12px; }
 
-  /* “Sobre el proyecto”: pasar a 1 columna */
   .resumen__intro {
     grid-template-columns: 1fr;
   }
@@ -982,7 +980,6 @@ p {
     max-height: 260px;
   }
 
-  /* Footer: apilar marca y redes */
   .footer-contenedor {
     grid-template-columns: 1fr;
     gap: 12px;
@@ -990,12 +987,10 @@ p {
   .footer-brand { width: 100%; }
   .footer-redes { justify-content: flex-start; }
 
-  /* Expedición: grillas más fluidas */
   .falkor-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Tecnología: de 3 → 2 columnas */
   .tecnologia .tech-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
@@ -1033,30 +1028,21 @@ p {
     width: 8px; height: 8px; margin: 0 3px;
   }
 
-  /* Tipografías: bajar un toque densidad */
+  /* bajar un toque densidad en el texto */
   .resumen__card h3, .resumen__card h4 { font-size: 1rem; }
   .resumen__card p, .falkor-grid p { line-height: 1.5; }
 
-  /* Tecnología: de 2 → 1 columna */
   .tecnologia .tech-grid { grid-template-columns: 1fr; }
 
-  /* Botón “Explorar en Google Earth” (si lo usás) */
   .btn-earth {
     display: inline-block;
     padding: 10px 14px;
     font-size: 0.95rem;
   }
 
-  /* Footer inferior: apilar y centrar */
   .footer-bottom {
     flex-direction: column;
     gap: 6px;
     text-align: center;
   }
-}
-
-/* ≤400px (teléfonos muy chicos) */
-@media (max-width: 400px) {
-  .navbar-brand span { display: none; } /* deja solo el logo */
-  .footer-redes { gap: 10px; }
 }
