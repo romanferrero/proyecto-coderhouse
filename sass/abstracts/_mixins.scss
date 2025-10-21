@@ -1,0 +1,19 @@
+@use "sass:map";
+@use "variables" as v;
+
+@mixin respond($key) {
+  $size: map.get(v.$bp, $key);
+  @if $size {
+    @media (max-width: $size) { @content; }
+  }
+}
+
+@mixin container() {
+  max-width: v.$container;
+  margin-inline: auto;
+}
+
+@mixin focus-ring($color) {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba($color, .15);
+}

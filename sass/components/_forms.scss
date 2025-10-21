@@ -1,0 +1,58 @@
+@use '../abstracts' as *;
+
+.formulario-contacto {
+    background: #fff;
+    color: #222;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .25);
+    text-align: left;
+
+    label {
+        display: block;
+        margin-top: 1rem;
+        font-weight: 500;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+        font-family: "Lato", sans-serif;
+        font-size: 1rem;
+        color: $azul;
+        padding: 12px 14px;
+        border: 1.5px solid $beige;
+        border-radius: 10px;
+        background: #fff;
+        transition: border-color .2s ease, box-shadow .2s ease;
+
+        &::placeholder {
+            color: $azul;
+        }
+
+        &:focus {
+            border-color: $azul;
+            @include focus-ring($azul);
+        }
+    }
+
+    button {
+        display: block;
+        margin: 1.5rem auto 0;
+        background: $azul-oscuro;
+        color: $beige-claro;
+        border: 0;
+        padding: .8rem 2rem;
+        border-radius: 6px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color .3s;
+
+        &:hover {
+            background: $azul;
+        }
+    }
+}

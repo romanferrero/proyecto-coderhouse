@@ -1,0 +1,205 @@
+@use '../abstracts' as *;
+
+.expedicion {
+    padding: 28px 16px;
+    max-width: $container;
+    margin: 0 auto;
+
+    h2 {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 700;
+        color: $azul-oscuro;
+        margin: 0 0 8px;
+    }
+
+    p {
+        font-family: "Lato", sans-serif;
+        color: $azul-oscuro;
+        margin: 0;
+    }
+}
+
+.team {
+    padding: 28px 16px;
+    background: $beige-claro;
+    max-width: $container;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+    align-items: start;
+
+    h2,
+    h3,
+    >h4 {
+        grid-column: 1 / -1;
+    }
+
+    h2 {
+        color: $azul-oscuro;
+        margin: 0 0 8px;
+        font-weight: 750;
+    }
+
+    h3 {
+        color: $azul-oscuro;
+        font-weight: 650;
+        margin: 8px 0 6px;
+        padding-bottom: 6px;
+        border-bottom: 2px solid $beige;
+    }
+
+    >h4 {
+        color: $azul-oscuro;
+        margin: 4px 0 0;
+    }
+
+    article {
+        background: #fff;
+        border: 1.5px solid $beige;
+        border-radius: $radius;
+        padding: 14px;
+        box-shadow: $shadow;
+        transition: transform .1s ease, box-shadow .2s ease, border-color .2s ease;
+
+        &:hover,
+        &:focus-within {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 26px rgba(0, 0, 0, .06), 0 0 0 3px rgba($azul, .08);
+            border-color: $azul;
+        }
+
+        h4 {
+            color: $azul-oscuro;
+            margin: 0 0 4px;
+        }
+
+        p {
+            color: $azul;
+            margin: 0;
+        }
+    }
+}
+
+/* ROV sección (fondo con ::before) */
+.tecnologia {
+    position: relative;
+    padding: 80px 20px;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    z-index: 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+            linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .65)),
+            url("../medios/ROV.jpg") center/cover no-repeat;
+        z-index: -1;
+        filter: brightness(.95);
+    }
+
+    >h2 {
+        margin-bottom: 2.5rem;
+        font-weight: 800;
+        color: $beige-claro;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, .6);
+    }
+
+    .tech-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        max-width: $container;
+        margin: 0 auto;
+    }
+
+    article {
+        background: none;
+        padding: 0;
+        text-align: left;
+    }
+
+    h3 {
+        color: $beige-claro;
+        font-weight: 700;
+        margin-bottom: .6rem;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, .4);
+    }
+
+    p {
+        color: #f5f5f5;
+        line-height: 1.6;
+        font-weight: 600;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, .5);
+    }
+}
+
+@include respond(lg) {
+    .tecnologia .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+}
+
+@include respond(sm) {
+    .tecnologia .tech-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*  Falkor */
+.falkor {
+    max-width: $container;
+    margin: 0 auto 28px;
+    padding: clamp(22px, 3vw, 28px) 16px;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    background: none;
+
+    h2 {
+        margin: 0 0 8px;
+        font-weight: 600;
+        color: $azul-oscuro;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto 12px;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.falkor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    gap: clamp(14px, 2.2vw, 22px);
+    margin-top: clamp(12px, 2vw, 18px);
+
+    article {
+        padding-left: 12px;
+        border-left: 3px solid $beige;
+    }
+
+    h3 {
+        margin: 0 0 6px;
+        color: $azul-oscuro;
+        font-weight: 700;
+        letter-spacing: .2px;
+    }
+
+    p {
+        margin: 0;
+        color: $text;
+        line-height: 1.6;
+    }
+}
+
+@include respond(lg) {
+    .falkor-grid {
+        grid-template-columns: 1fr;
+    }
+}

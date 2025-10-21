@@ -1,0 +1,94 @@
+@use '../abstracts' as *;
+
+:root {
+    --azul-oscuro: #{$azul-oscuro};
+    --azul: #{$azul};
+    --beige: #{$beige};
+    --beige-claro: #{$beige-claro};
+    --text: #{$text};
+    --white: #{$white};
+    --container: #{$container};
+    --radius: #{$radius};
+    --shadow: #{$shadow};
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: $white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1,
+h2 {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+h1 {
+    color: $azul-oscuro;
+}
+
+h2 {
+    color: $azul-oscuro;
+}
+
+h3,
+h4,
+p,
+li,
+button,
+label,
+input,
+textarea,
+a {
+    font-family: "Lato", system-ui, sans-serif;
+}
+
+h3 {
+    color: $azul-oscuro;
+}
+
+h4 {
+    color: $azul;
+}
+
+.hero-caption {
+  h1, h2 { color: $beige-claro; }
+}
+
+p {
+    color: $text;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.carousel,
+.carousel-inner,
+.hero-carousel {
+    overflow: hidden;
+}
+
+img,
+iframe,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

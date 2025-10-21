@@ -1,0 +1,33 @@
+@use '../abstracts' as *;
+
+.logos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 150px));
+    justify-content: center;
+    gap: 12px;
+
+    &--destacados {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 170px));
+    }
+
+    img {
+        width: 100%;
+        aspect-ratio: 3 / 2;
+        object-fit: contain;
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, .06);
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, .03);
+        transition: transform .12s ease, box-shadow .12s ease;
+
+        &:hover,
+        &:focus-visible {
+            transform: translateY(-2px) scale(1.03);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, .12);
+            border-color: $azul;
+            filter: saturate(1.05);
+            outline: none;
+        }
+    }
+}

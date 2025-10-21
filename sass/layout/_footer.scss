@@ -1,0 +1,127 @@
+@use '../abstracts' as *;
+
+.footer {
+    font-family: "Lato", sans-serif;
+    background: $azul-oscuro;
+    color: $beige-claro;
+    width: 100%;
+    border-top: 1px solid rgba(249, 243, 239, .10);
+
+    p {
+        color: $beige-claro;
+    }
+
+    .footer-contenedor {
+        @include container();
+        padding: 18px 16px;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .footer-brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: $beige-claro;
+        width: 50%;
+
+        img {
+            height: clamp(42px, 5vw, 54px);
+            width: auto;
+            display: block;
+            filter: drop-shadow(0 2px 6px rgba(0, 0, 0, .35));
+        }
+
+        span {
+            font-weight: 700;
+            letter-spacing: .4px;
+        }
+    }
+
+    .footer-redes {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        a {
+            color: $beige-claro;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: transform .12s ease, opacity .2s ease, border-color .2s ease;
+
+            &:hover,
+            &:focus-visible {
+                transform: translateY(-1px);
+                border-color: $beige-claro;
+                opacity: .95;
+                outline: none;
+            }
+        }
+    }
+
+    .footer-bottom {
+        border-top: 1px solid rgba(249, 243, 239, .15);
+        padding: 10px 16px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+        @include container();
+        margin: 0 auto;
+        opacity: .9;
+        font-size: .95rem;
+    }
+
+    .to-top {
+        color: $beige-claro;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        text-underline-offset: 10px;
+        transition: border-color .2s ease, opacity .2s ease, transform .12s ease;
+
+        &:hover,
+        &:focus-visible {
+            border-color: $beige-claro;
+            opacity: .95;
+            transform: translateY(-1px);
+            outline: none;
+        }
+    }
+
+    @include respond(lg) {
+        .footer-contenedor {
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .footer-brand {
+            width: 100%;
+        }
+
+        .footer-redes {
+            justify-content: flex-start;
+        }
+    }
+
+    @include respond(md) {
+        .footer-contenedor {
+            text-align: center;
+        }
+
+        .footer-redes {
+            justify-content: center;
+        }
+    }
+
+    @include respond(sm) {
+        .footer-bottom {
+            flex-direction: column;
+            gap: 6px;
+            text-align: center;
+        }
+    }
+}
