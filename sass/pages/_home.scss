@@ -1,0 +1,164 @@
+@use '../abstracts' as *;
+
+.auspiciadores {
+  max-width: $container;
+  margin: 0 auto 28px;
+  padding: 28px 16px;
+  text-align: center;
+  background: none;
+  border-radius: $radius;
+  box-shadow: $shadow;
+
+  h2 {
+    margin: 0 0 10px;
+    color: $azul-oscuro;
+  }
+
+  h3 {
+    margin: 18px 0 12px;
+    color: $azul;
+    font-size: 1.05rem;
+  }
+
+  .logos-grid {
+    gap: clamp(16px, 2.5vw, 28px);
+    margin-bottom: clamp(12px, 2vw, 24px);
+
+    img {
+      padding: clamp(10px, 1.2vw, 16px);
+    }
+  }
+}
+
+.resumen {
+  background: none;
+  padding: 28px 16px;
+  max-width: $container;
+  margin: 0 auto 28px;
+  border-radius: $radius;
+  box-shadow: $shadow;
+
+  h2 {
+    margin: 0 0 14px;
+    color: $azul-oscuro;
+  }
+
+  &__intro {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: clamp(14px, 3vw, 28px);
+    align-items: center;
+    margin-bottom: clamp(16px, 3vw, 28px);
+
+    p {
+      margin: 0;
+      color: $text;
+    }
+  }
+
+  &__media {
+    margin: 0;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+      border-radius: 12px;
+      display: block;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, .06);
+      max-height: 300px;
+      margin: 0 auto;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: clamp(14px, 2.4vw, 22px);
+    justify-items: stretch;
+    align-items: start;
+  }
+
+  &__card {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .06);
+    border-radius: 12px;
+    padding: 14px 16px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .03);
+    transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, .06);
+      border-color: rgba(0, 0, 0, .10);
+    }
+
+    h3,
+    h4 {
+      margin: 0 0 6px;
+      color: $azul;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0;
+      color: $text;
+      line-height: 1.55;
+    }
+  }
+
+  &__why {
+    margin-top: clamp(16px, 3vw, 28px);
+
+    >h3 {
+      margin: 0 0 10px;
+      color: $azul-oscuro;
+      font-size: 1.15rem;
+    }
+  }
+}
+
+@include respond(lg) {
+  .resumen__intro {
+    grid-template-columns: 1fr;
+  }
+
+  .resumen__media img {
+    max-height: 260px;
+  }
+}
+
+@include respond(md) {
+  .resumen__card {
+    padding: 12px 14px;
+  }
+
+  .auspiciadores .logos-grid {
+    gap: 10px;
+  }
+
+  .logos-grid img {
+    padding: 8px;
+  }
+}
+
+.presentacion {
+  max-width: $container;
+  margin: 0 auto 28px;
+  padding: 28px 16px;
+
+  p {
+    margin: 0;
+    color: $text;
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: left;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+}
+
+@include respond(md) {
+  .presentacion {
+    padding: 22px 12px;
+  }
+}

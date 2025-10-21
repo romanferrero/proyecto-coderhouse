@@ -1,0 +1,92 @@
+@use '../abstracts' as *;
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: .6rem 1.1rem;
+    border-radius: 10px;
+    border: 1.5px solid transparent;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    transition: transform .12s ease, box-shadow .2s ease, background-color .2s ease, border-color .2s ease, color .2s ease;
+
+    &:hover,
+    &:focus-visible {
+        transform: translateY(-1px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, .08);
+        outline: none;
+    }
+
+    &:disabled,
+    &[aria-disabled='true'] {
+        opacity: .6;
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+.btn--primary {
+    background: $azul-oscuro;
+    color: $beige-claro;
+    border-color: $azul-oscuro;
+
+    &:hover,
+    &:focus-visible {
+        background: $azul;
+        border-color: $azul;
+    }
+}
+
+.btn--secondary {
+    background: $beige;
+    color: $azul-oscuro;
+    border-color: $beige;
+
+    &:hover,
+    &:focus-visible {
+        filter: brightness(1.02);
+    }
+}
+
+.btn--outline {
+    background: #fff;
+    color: $azul-oscuro;
+    border-color: $azul-oscuro;
+
+    &:hover,
+    &:focus-visible {
+        background: rgba(27, 60, 83, .06);
+    }
+}
+
+.btn--light {
+    background: $beige-claro;
+    color: $azul-oscuro;
+    border-color: $beige-claro;
+}
+
+.btn--sm {
+    padding: .45rem .85rem;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn--lg {
+    padding: .8rem 1.4rem;
+    font-size: 1.05rem;
+    border-radius: 12px;
+}
+
+.btn--icon-right>.icon {
+    margin-left: .35rem;
+}
+
+.btn-group {
+    display: inline-flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+}

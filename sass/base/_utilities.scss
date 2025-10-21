@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+/* utilidad contenedor */
+.container-limit {
+    @include container();
+}
+
+/* ocupa toda la fila en CSS Grid */
+.grid-span-full {
+    grid-column: 1 / -1;
+}
