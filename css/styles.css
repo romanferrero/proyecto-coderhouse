@@ -27,15 +27,10 @@ body {
 
 body {
     margin: 0;
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
     background: var(--white);
 }
 
-main {
-    flex: 1;
-}
 
 img {
     max-width: 100%;
@@ -79,47 +74,49 @@ p {
 
 /*HOME*/
 /* Componente NavBar*/
-.navbar {
+.site-nav {
     background-color: var(--azul-oscuro);
     min-height: 64px;
 }
 
-.navbar-brand {
+.site-nav .navbar-brand {
     letter-spacing: 0.5px;
     color: var(--beige-claro);
 }
 
-.navbar-brand img {
+.site-nav .navbar-brand img {
     height: clamp(62px, 8vw, 82px);
     width: auto;
 }
 
-.navbar-nav .nav-link {
+.site-nav .navbar-nav .nav-link {
     color: var(--beige-claro);
     transition: color 0.2s ease, border-bottom 0.2s ease;
     text-decoration: none;
     border-bottom: none;
 }
 
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link:focus {
-    color: var(--white) !important;
+.site-nav .navbar-nav .nav-link:hover,
+.site-nav .navbar-nav .nav-link:focus {
+    color: var(--white);
+    /* sin !important */
     text-decoration: underline;
     text-underline-offset: 12px;
     text-decoration-thickness: 2px;
 }
 
-.navbar-nav .nav-link.active {
-    color: var(--white) !important;
+.site-nav .navbar-nav .nav-link.active {
+    color: var(--white);
+    /* sin !important */
     text-decoration: none;
     font-weight: 600;
 }
 
-.navbar-toggler {
+.site-nav .navbar-toggler {
     border-color: var(--beige-claro);
 }
 
-.navbar-toggler-icon {
+.site-nav .navbar-toggler-icon {
     filter: brightness(1.8);
 }
 
@@ -162,6 +159,14 @@ p {
 }
 
 .hero-caption h2 {
+    margin: 0;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    color: var(--beige-claro);
+    letter-spacing: .5px;
+    font-weight: 700;
+}
+
+.hero-caption h3 {
     margin: 6px 0 0;
     color: var(--beige-claro);
     font-size: clamp(1.25rem, 2.4vw, 1.5rem);
@@ -347,6 +352,23 @@ p {
     background: none;
 }
 
+.contacto h1,
+.expedicion h1,
+#youtube h1 {
+    color: var(--azul-oscuro);
+    font-weight: 700;
+    letter-spacing: .2px;
+    margin-bottom: .25rem;
+}
+
+#youtube h1+h2 {
+    margin-top: .35rem;
+}
+
+main h1:not(.hero-caption h1) {
+    color: var(--azul-oscuro);
+}
+
 /* FOOTER */
 .footer {
     font-family: "Lato", sans-serif;
@@ -443,7 +465,7 @@ p {
 }
 
 
-/* TRANSMISIONES */
+/* MULTIMEDIA */
 /* componente Card */
 .card-media {
     border: 1.5px solid var(--beige);
@@ -451,6 +473,7 @@ p {
     box-shadow: var(--shadow);
     overflow: hidden;
     background: #fff;
+    transition: transform .12s ease, box-shadow .2s ease, border-color .2s ease;
 }
 
 .card-media .card-title {
@@ -469,13 +492,6 @@ p {
     border-color: var(--azul);
 }
 
-.card,
-.card-media {
-    transition: transform .12s ease, box-shadow .2s ease, border-color .2s ease;
-}
-
-.card:hover,
-.card:focus-within,
 .card-media:hover,
 .card-media:focus-within {
     transform: translateY(-2px);
@@ -492,11 +508,9 @@ p {
 }
 
 /* sacar márgenes grandes por defecto del blockquote y centrar cada tarjeta */
-#tweets .twitter-tweet {
-    margin: 0 auto !important;
-    /* centra dentro de su columna */
-    max-width: 100% !important;
-    /* no exceder columna */
+#tweets .card .twitter-tweet {
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 /*  galeria multimedia  */
@@ -579,7 +593,7 @@ p {
     }
 }
 
-/*------TRANSMISIONES------*/
+/*------MULTIMEDIA------*/
 
 
 /*  CONTACTO */
@@ -935,7 +949,7 @@ p {
     color: var(--azul-oscuro);
 }
 
-/* Wrapper para que el iframe sea 100% responsive con proporción 16:9 */
+/* wrapper para que el iframe sea 100% responsive con proporción 16:9 */
 .modelo-tridimensional .viewer {
     position: relative;
     width: 100%;
@@ -956,6 +970,17 @@ p {
     width: 100%;
     height: 100%;
     border: 0;
+}
+
+/* Sticky footer  */
+.page-wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-wrap > main {
+  flex: 1;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1050,6 +1075,34 @@ p {
     .gal-card .gal-media {
         aspect-ratio: 16 / 9;
     }
+
+    .resumen__intro {
+        grid-template-columns: 1fr;
+        /* antes: 1.2fr .8fr */
+    }
+
+    .resumen__media img {
+        max-height: 220px;
+        /* un poco menos alta en móvil */
+    }
+
+    /* Footer en 1 columna (marca arriba, redes abajo) */
+    .footer-contenedor {
+        grid-template-columns: 1fr;
+        /* antes: auto auto */
+        text-align: center;
+    }
+
+    .footer-redes {
+        justify-content: center;
+    }
+
+    /* Contacto: un poco menos de padding vertical */
+    .contacto {
+        padding: 2.5rem 1rem;
+        /* antes: 4rem 1rem */
+    }
+
 }
 
 /* ≤576px */
