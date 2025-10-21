@@ -12,289 +12,297 @@
 </head>
 
 <body id="top" data-page="inicio">
-    <!--  Encabezado del sitio  -->
-    <header role="banner">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid" style="max-width: var(--container);">
-                <a class="navbar-brand d-flex align-items-center gap-2" href="./index.html">
-                    <img src="./medios/logo4.png" alt="Logo Uruguay Sub200">
-                    <span class="fw-semibold">U-Sub200</span>
-                </a>
+    <div class="page-wrap">
+        <!--  Encabezado del sitio  -->
+        <header role="banner">
+            <nav class="site-nav navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid" style="max-width: var(--container);">
+                    <a class="navbar-brand d-flex align-items-center gap-2" href="./index.html">
+                        <img src="./medios/logo4.png" alt="Logo Uruguay Sub200">
+                        <span class="fw-semibold">U-Sub200</span>
+                    </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                    aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                        aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="mainNav">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./pages/expedicion.html">Expedición</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./pages/transmisiones.html">Transmisiones</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
-                    </ul>
+                    <div class="collapse navbar-collapse" id="mainNav">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/expedicion.html">Expedición</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/multimedia.html">Multimedia</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
-    <main>
-        <!-- Hero Carousel -->
-        <section class="hero" aria-label="Portada Uruguay Sub200">
-            <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="6000">
-                <!-- Indicadores -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
-                </div>
+        <main>
+            <!-- Hero Carousel -->
+            <section class="hero" aria-label="Portada Uruguay Sub200">
+                <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel"
+                    data-bs-interval="6000">
+                    <!-- Indicadores -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
 
-                <!-- Slides -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./medios/carousel4.jpg" class="d-block w-100"
-                            alt="Vista del océano en costas uruguayas" loading="eager">
-                        <div class="hero-caption">
-                            <h1 class="mb-2">Uruguay Sub200</h1>
-                            <h2 class="h5 fw-normal">Explorando los secretos del mar uruguayo.</h2>
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./medios/carousel4.jpg" class="d-block w-100"
+                                alt="Vista del océano en costas uruguayas" loading="eager">
+                            <div class="hero-caption">
+                                <h1 class="mb-2">Uruguay Sub200</h1>
+                                <h2 class="h5 fw-normal">Explorando los secretos del mar uruguayo.</h2>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="./medios/carousel2.jpg" class="d-block w-100" alt="ROV extraido del agua"
+                                loading="lazy">
+                            <div class="hero-caption">
+                                <h2 class="mb-2">Tecnología</h2>
+                                <h3 class="h5 fw-normal">ROV, sonar multihaz, muestreo remoto y transmisiones en vivo.
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="./medios/carousel1.jpg" class="d-block w-100"
+                                alt="Buque de investigación Falkor (too) en navegación" loading="lazy">
+                            <div class="hero-caption">
+                                <h2 class="mb-2">Exploración</h2>
+                                <h3 class="h5 fw-normal">B/I Falkor (too) buque de investigación grande y moderno,
+                                    equipado
+                                    con múltiples
+                                    laboratorios y amplias instalaciones científicas.</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="./medios/carousel3.jpg" class="d-block w-100"
+                                alt="Buque de investigación Falkor (too) en navegación" loading="lazy">
+                            <div class="hero-caption">
+                                <h2 class="mb-2">Alfabetización oceánica</h2>
+                                <h3 class="h5 fw-normal">Ciencia, innovación y conciencia ciudadana.</h3>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="./medios/carousel5.jpg" class="d-block w-100"
+                                alt="Buque de investigación Falkor (too) en navegación" loading="lazy">
+                            <div class="hero-caption">
+                                <h2 class="mb-2">Inspiración</h2>
+                                <h3 class="h5 fw-normal">Un viaje que despierta la pasión por el océano y su
+                                    conservación.</h3>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="carousel-item">
-                        <img src="./medios/carousel2.jpg" class="d-block w-100" alt="ROV extraido del agua"
+                    <!-- Controles -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel"
+                        data-bs-slide="prev" aria-label="Anterior">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel"
+                        data-bs-slide="next" aria-label="Siguiente">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- seccion de presentacion -->
+            <section class="presentacion">
+                <p>El proyecto Uruguay SUB200, centrado en la campaña Fkt250812 a bordo del B/I Falkor (Too)
+                    en aguas nacionales, integra dimensiones científicas, institucionales y culturales en torno
+                    a la expedición. La iniciativa pretende impulsar un esfuerzo conjunto a nivel país que
+                    permita fortalecer la alfabetización oceánica, estimular la investigación
+                    transdisciplinaria y promover la gestión responsable y sostenible de los ecosistemas
+                    marinos.</p>
+            </section>
+
+            <section class="resumen" id="resumen">
+                <h2>Sobre el proyecto</h2>
+                <div class="resumen__intro">
+                    <p>
+                        Utilizando tecnología de vanguardia, el B/I Falkor (too) explorará el margen continental
+                        para desentrañar sus secretos, mientras impulsa la alfabetización oceánica, vinculando
+                        ciencia, innovación y conciencia ciudadana.
+                    </p>
+                    <figure class="resumen__media">
+                        <img src="./medios/foto8.jpg" alt="Buque de investigación Falkor (too) navegando"
                             loading="lazy">
-                        <div class="hero-caption">
-                            <h1 class="mb-2">Tecnología</h1>
-                            <h2 class="h5 fw-normal">ROV, sonar multihaz, muestreo remoto y transmisiones en vivo.</h2>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="./medios/carousel1.jpg" class="d-block w-100"
-                            alt="Buque de investigación Falkor (too) en navegación" loading="lazy">
-                        <div class="hero-caption">
-                            <h1 class="mb-2">Exploración</h1>
-                            <h2 class="h5 fw-normal">B/I Falkor (too) buque de investigación grande y moderno, equipado
-                                con múltiples
-                                laboratorios y amplias instalaciones científicas.</h2>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="./medios/carousel3.jpg" class="d-block w-100"
-                            alt="Buque de investigación Falkor (too) en navegación" loading="lazy">
-                        <div class="hero-caption">
-                            <h1 class="mb-2">Alfabetización oceánica</h1>
-                            <h2 class="h5 fw-normal">Ciencia, innovación y conciencia ciudadana.</h2>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="./medios/carousel5.jpg" class="d-block w-100"
-                            alt="Buque de investigación Falkor (too) en navegación" loading="lazy">
-                        <div class="hero-caption">
-                            <h1 class="mb-2">Inspiración</h1>
-                            <h2 class="h5 fw-normal">Un viaje que despierta la pasión por el océano y su conservación.
-                            </h2>
-                        </div>
-                    </div>
+                    </figure>
                 </div>
 
-                <!-- Controles -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev"
-                    aria-label="Anterior">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next"
-                    aria-label="Siguiente">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
-            </div>
-        </section>
-
-        <!-- seccion de presentacion -->
-        <section class="presentacion">
-            <p>El proyecto Uruguay SUB200, centrado en la campaña Fkt250812 a bordo del B/I Falkor (Too)
-                en aguas nacionales, integra dimensiones científicas, institucionales y culturales en torno
-                a la expedición. La iniciativa pretende impulsar un esfuerzo conjunto a nivel país que
-                permita fortalecer la alfabetización oceánica, estimular la investigación
-                transdisciplinaria y promover la gestión responsable y sostenible de los ecosistemas
-                marinos.</p>
-        </section>
-
-        <section class="resumen" id="resumen">
-            <h2>Sobre el proyecto</h2>
-            <div class="resumen__intro">
-                <p>
-                    Utilizando tecnología de vanguardia, el B/I Falkor (too) explorará el margen continental
-                    para desentrañar sus secretos, mientras impulsa la alfabetización oceánica, vinculando
-                    ciencia, innovación y conciencia ciudadana.
-                </p>
-                <figure class="resumen__media">
-                    <img src="./medios/foto8.jpg" alt="Buque de investigación Falkor (too) navegando" loading="lazy">
-                </figure>
-            </div>
-
-            <!-- 3 pilares -->
-            <div class="resumen__grid">
-                <article class="resumen__card">
-                    <h3>Exploración del margen continental</h3>
-                    <p>
-                        Investigación científica de las zonas poco estudiadas de la plataforma y talud
-                        continental uruguayo, para comprender su geología, biodiversidad y potenciales recursos.
-                    </p>
-                </article>
-
-                <article class="resumen__card">
-                    <h3>Uso de tecnología avanzada</h3>
-                    <p>
-                        Equipos de última generación, como Vehículo Operado Remotamente (ROV), sonar multihaz y
-                        sistemas de muestreo remoto, para obtener datos precisos de las profundidades marinas.
-                    </p>
-                </article>
-
-                <article class="resumen__card">
-                    <h3>Alfabetización oceánica</h3>
-                    <p>
-                        Iniciativa para educar y concientizar a la sociedad sobre la importancia del océano,
-                        su influencia en el clima, la economía y la vida cotidiana, fomentando su conservación.
-                    </p>
-                </article>
-            </div>
-
-            <div class="resumen__why">
-                <h3>¿Por qué exploramos?</h3>
-
+                <!-- 3 pilares -->
                 <div class="resumen__grid">
                     <article class="resumen__card">
-                        <h4>Necesitamos conocer</h4>
+                        <h3>Exploración del margen continental</h3>
                         <p>
-                            Aún nos falta mucho por descubrir: menos del 0.001% de los océanos ha sido explorado
-                            o visto por el ojo humano. Explorar es clave para entender el ecosistema global,
-                            proteger la biodiversidad y promover un uso sustentable de los recursos marinos.
+                            Investigación científica de las zonas poco estudiadas de la plataforma y talud
+                            continental uruguayo, para comprender su geología, biodiversidad y potenciales recursos.
                         </p>
                     </article>
 
                     <article class="resumen__card">
-                        <h4>Ecosistemas marinos vulnerables (EMV)</h4>
+                        <h3>Uso de tecnología avanzada</h3>
                         <p>
-                            Son hábitats en riesgo por actividades humanas y el cambio climático. En aguas uruguayas
-                            incluyen arrecifes de coral de aguas profundas y zonas de reproducción de diversas especies.
+                            Equipos de última generación, como Vehículo Operado Remotamente (ROV), sonar multihaz y
+                            sistemas de muestreo remoto, para obtener datos precisos de las profundidades marinas.
                         </p>
                     </article>
 
                     <article class="resumen__card">
-                        <h4>Es necesario conservar los EMV</h4>
+                        <h3>Alfabetización oceánica</h3>
                         <p>
-                            El océano regula el clima, produce más del 50% del oxígeno que respiramos y alberga
-                            biodiversidad extraordinaria. Estos ecosistemas son zonas de reproducción, alimentación
-                            y refugio para especies clave, muchas de interés pesquero.
+                            Iniciativa para educar y concientizar a la sociedad sobre la importancia del océano,
+                            su influencia en el clima, la economía y la vida cotidiana, fomentando su conservación.
                         </p>
                     </article>
                 </div>
+
+                <div class="resumen__why">
+                    <h3>¿Por qué exploramos?</h3>
+
+                    <div class="resumen__grid">
+                        <article class="resumen__card">
+                            <h4>Necesitamos conocer</h4>
+                            <p>
+                                Aún nos falta mucho por descubrir: menos del 0.001% de los océanos ha sido explorado
+                                o visto por el ojo humano. Explorar es clave para entender el ecosistema global,
+                                proteger la biodiversidad y promover un uso sustentable de los recursos marinos.
+                            </p>
+                        </article>
+
+                        <article class="resumen__card">
+                            <h4>Ecosistemas marinos vulnerables (EMV)</h4>
+                            <p>
+                                Son hábitats en riesgo por actividades humanas y el cambio climático. En aguas uruguayas
+                                incluyen arrecifes de coral de aguas profundas y zonas de reproducción de diversas
+                                especies.
+                            </p>
+                        </article>
+
+                        <article class="resumen__card">
+                            <h4>Es necesario conservar los EMV</h4>
+                            <p>
+                                El océano regula el clima, produce más del 50% del oxígeno que respiramos y alberga
+                                biodiversidad extraordinaria. Estos ecosistemas son zonas de reproducción, alimentación
+                                y refugio para especies clave, muchas de interés pesquero.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="auspiciadores" aria-labelledby="org-colab">
+                <h2 id="org-colab">Organizan y colaboran</h2>
+
+                <h3>Organizan</h3>
+                <div class="logos-grid logos-grid--destacados">
+                    <img src="./medios/ausp-udelar.png" alt="UDELAR" loading="lazy">
+                    <img src="./medios/ausp-challenger.png" alt="Challenger" loading="lazy">
+                </div>
+
+                <h3>Instituciones participantes</h3>
+                <div class="logos-grid">
+                    <img src="./medios/ausp-anii.png" alt="ANII" loading="lazy">
+                    <img src="./medios/ausp-armadanacional.png" alt="Armada Nacional" loading="lazy">
+                    <img src="./medios/ausp-autoctuy.png" alt="Autoctuy" loading="lazy">
+                    <img src="./medios/ausp-bse.png" alt="BSE" loading="lazy">
+                    <img src="./medios/ausp-cebimarusp.png" alt="CEBIMAR USP" loading="lazy">
+                    <img src="./medios/ausp-ceibal.png" alt="Plan Ceibal" loading="lazy">
+                    <img src="./medios/ausp-conicet.png" alt="CONICET" loading="lazy">
+                    <img src="./medios/ausp-cordap.png" alt="CORDAP" loading="lazy">
+                    <img src="./medios/ausp-cure.png" alt="CURE" loading="lazy">
+                    <img src="./medios/ausp-facultadedeciencia.png" alt="Facultad de Ciencias" loading="lazy">
+                    <img src="./medios/ausp-fcien.png" alt="FCIEN" loading="lazy">
+                    <img src="./medios/ausp-iibce.png" alt="IIBCE" loading="lazy">
+                    <img src="./medios/ausp-instciencocean.png" alt="Instituto de Ciencias del Océano" loading="lazy">
+                    <img src="./medios/ausp-institoceanog.png" alt="Instituto Oceanográfico" loading="lazy">
+                    <img src="./medios/ausp-karumbe.png" alt="Karumbé" loading="lazy">
+                    <img src="./medios/ausp-lapconsultants.png" alt="LAP Consultants" loading="lazy">
+                    <img src="./medios/ausp-marazuluru.png" alt="Mar Azul Uruguay" loading="lazy">
+                    <img src="./medios/ausp-ministerioamb.png" alt="Ministerio de Ambiente" loading="lazy">
+                    <img src="./medios/ausp-ministeriodefensa.png" alt="Ministerio de Defensa" loading="lazy">
+                    <img src="./medios/ausp-ministerioedu.png" alt="Ministerio de Educación" loading="lazy">
+                    <img src="./medios/ausp-ministerioeduycult.png" alt="Ministerio de Educación y Cultura"
+                        loading="lazy">
+                    <img src="./medios/ausp-ministpesca.png" alt="Ministerio de Pesca" loading="lazy">
+                    <img src="./medios/ausp-mnhn.png" alt="MNHN" loading="lazy">
+                    <img src="./medios/ausp-museoufrj.png" alt="Museo UFRJ" loading="lazy">
+                    <img src="./medios/ausp-mzusp.png" alt="MZUSP" loading="lazy">
+                    <img src="./medios/ausp-pedecibamecudelar.png" alt="PEDECIBA - MECUDELAR" loading="lazy">
+                    <img src="./medios/ausp-senckenberg.png" alt="Senckenberg" loading="lazy">
+                    <img src="./medios/ausp-serviciooceanograf.png" alt="Servicio Oceanográfico" loading="lazy">
+                    <img src="./medios/ausp-socmalacologicauy.png" alt="Sociedad Malacológica Uruguay" loading="lazy">
+                    <img src="./medios/ausp-sorbonneuniv.png" alt="Sorbonne University" loading="lazy">
+                    <img src="./medios/ausp-ufrgs.png" alt="UFRGS" loading="lazy">
+                    <img src="./medios/ausp-unesp.png" alt="UNESP" loading="lazy">
+                    <img src="./medios/ausp-uniba.png" alt="UNIBA" loading="lazy">
+                    <img src="./medios/ausp-unichile.png" alt="Universidad de Chile" loading="lazy">
+                </div>
+
+                <h3>Apoyan</h3>
+                <div class="logos-grid">
+                    <img src="./medios/ausp-oceancensus.jpg" alt="Ocean Census" loading="lazy">
+                    <img src="./medios/ausp-gergu.jpg" alt="GERGU" loading="lazy">
+                    <img src="./medios/ausp-azara.png" alt="Fundación Azara" loading="lazy">
+                    <img src="./medios/ausp-epsu.png" alt="EPSU" loading="lazy">
+                </div>
+
+                <h3>Auspician</h3>
+                <div class="logos-grid">
+                    <img src="./medios/ausp-bse.png" alt="BSE" loading="lazy">
+                    <img src="./medios/ausp-ancap.png" alt="ANCAP" loading="lazy">
+                    <img src="./medios/ausp-alur.png" alt="ALUR" loading="lazy">
+                    <img src="./medios/ausp-repapel.png" alt="Repapel" loading="lazy">
+                </div>
+            </section>
+
+        </main>
+
+        <!--  Pie de página  -->
+        <footer class="footer" id="footer">
+            <div class="footer-contenedor">
+                <!-- Marca -->
+                <a class="footer-brand" href="./index.html" aria-label="Ir al inicio">
+                    <img src="./medios/logo4.png" alt="Logo Uruguay Sub200">
+                    <span>U-Sub200</span>
+                </a>
+                <!-- Redes -->
+                <div class="footer-redes" aria-label="Redes sociales">
+                    <a href="https://www.facebook.com/hashtag/uruguaysub200" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://www.instagram.com/uruguaysub200/" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://youtube.com/SchmidtOcean" target="_blank" rel="noopener">YouTube</a>
+                    <a href="https://x.com/SchmidtOcean" target="_blank" rel="noopener">X</a>
+                </div>
             </div>
-        </section>
 
-        <section class="auspiciadores" aria-labelledby="org-colab">
-            <h2 id="org-colab">Organizan y colaboran</h2>
-
-            <h3>Organizan</h3>
-            <div class="logos-grid logos-grid--destacados">
-                <img src="./medios/ausp-udelar.png" alt="UDELAR" loading="lazy">
-                <img src="./medios/ausp-challenger.png" alt="Challenger" loading="lazy">
+            <div class="footer-bottom">
+                <small>Sitio no oficial Uruguay Sub200 | © Roman Ferrero</small>
+                <a class="to-top" href="#top">Volver arriba ↑</a>
             </div>
+        </footer>
 
-            <h3>Instituciones participantes</h3>
-            <div class="logos-grid">
-                <img src="./medios/ausp-anii.png" alt="ANII" loading="lazy">
-                <img src="./medios/ausp-armadanacional.png" alt="Armada Nacional" loading="lazy">
-                <img src="./medios/ausp-autoctuy.png" alt="Autoctuy" loading="lazy">
-                <img src="./medios/ausp-bse.png" alt="BSE" loading="lazy">
-                <img src="./medios/ausp-cebimarusp.png" alt="CEBIMAR USP" loading="lazy">
-                <img src="./medios/ausp-ceibal.png" alt="Plan Ceibal" loading="lazy">
-                <img src="./medios/ausp-conicet.png" alt="CONICET" loading="lazy">
-                <img src="./medios/ausp-cordap.png" alt="CORDAP" loading="lazy">
-                <img src="./medios/ausp-cure.png" alt="CURE" loading="lazy">
-                <img src="./medios/ausp-facultadedeciencia.png" alt="Facultad de Ciencias" loading="lazy">
-                <img src="./medios/ausp-fcien.png" alt="FCIEN" loading="lazy">
-                <img src="./medios/ausp-iibce.png" alt="IIBCE" loading="lazy">
-                <img src="./medios/ausp-instciencocean.png" alt="Instituto de Ciencias del Océano" loading="lazy">
-                <img src="./medios/ausp-institoceanog.png" alt="Instituto Oceanográfico" loading="lazy">
-                <img src="./medios/ausp-karumbe.png" alt="Karumbé" loading="lazy">
-                <img src="./medios/ausp-lapconsultants.png" alt="LAP Consultants" loading="lazy">
-                <img src="./medios/ausp-marazuluru.png" alt="Mar Azul Uruguay" loading="lazy">
-                <img src="./medios/ausp-ministerioamb.png" alt="Ministerio de Ambiente" loading="lazy">
-                <img src="./medios/ausp-ministeriodefensa.png" alt="Ministerio de Defensa" loading="lazy">
-                <img src="./medios/ausp-ministerioedu.png" alt="Ministerio de Educación" loading="lazy">
-                <img src="./medios/ausp-ministerioeduycult.png" alt="Ministerio de Educación y Cultura" loading="lazy">
-                <img src="./medios/ausp-ministpesca.png" alt="Ministerio de Pesca" loading="lazy">
-                <img src="./medios/ausp-mnhn.png" alt="MNHN" loading="lazy">
-                <img src="./medios/ausp-museoufrj.png" alt="Museo UFRJ" loading="lazy">
-                <img src="./medios/ausp-mzusp.png" alt="MZUSP" loading="lazy">
-                <img src="./medios/ausp-pedecibamecudelar.png" alt="PEDECIBA - MECUDELAR" loading="lazy">
-                <img src="./medios/ausp-senckenberg.png" alt="Senckenberg" loading="lazy">
-                <img src="./medios/ausp-serviciooceanograf.png" alt="Servicio Oceanográfico" loading="lazy">
-                <img src="./medios/ausp-socmalacologicauy.png" alt="Sociedad Malacológica Uruguay" loading="lazy">
-                <img src="./medios/ausp-sorbonneuniv.png" alt="Sorbonne University" loading="lazy">
-                <img src="./medios/ausp-ufrgs.png" alt="UFRGS" loading="lazy">
-                <img src="./medios/ausp-unesp.png" alt="UNESP" loading="lazy">
-                <img src="./medios/ausp-uniba.png" alt="UNIBA" loading="lazy">
-                <img src="./medios/ausp-unichile.png" alt="Universidad de Chile" loading="lazy">
-            </div>
-
-            <h3>Apoyan</h3>
-            <div class="logos-grid">
-                <img src="./medios/ausp-oceancensus.jpg" alt="Ocean Census" loading="lazy">
-                <img src="./medios/ausp-gergu.jpg" alt="GERGU" loading="lazy">
-                <img src="./medios/ausp-azara.png" alt="Fundación Azara" loading="lazy">
-                <img src="./medios/ausp-epsu.png" alt="EPSU" loading="lazy">
-            </div>
-
-            <h3>Auspician</h3>
-            <div class="logos-grid">
-                <img src="./medios/ausp-bse.png" alt="BSE" loading="lazy">
-                <img src="./medios/ausp-ancap.png" alt="ANCAP" loading="lazy">
-                <img src="./medios/ausp-alur.png" alt="ALUR" loading="lazy">
-                <img src="./medios/ausp-repapel.png" alt="Repapel" loading="lazy">
-            </div>
-        </section>
-
-    </main>
-
-    <!--  Pie de página  -->
-    <footer class="footer" id="footer">
-        <div class="footer-contenedor">
-            <!-- Marca -->
-            <a class="footer-brand" href="./index.html" aria-label="Ir al inicio">
-                <img src="./medios/logo4.png" alt="Logo Uruguay Sub200">
-                <span>U-Sub200</span>
-            </a>
-            <!-- Redes -->
-            <div class="footer-redes" aria-label="Redes sociales">
-                <a href="https://www.facebook.com/hashtag/uruguaysub200" target="_blank" rel="noopener">Facebook</a>
-                <a href="https://www.instagram.com/uruguaysub200/" target="_blank" rel="noopener">Instagram</a>
-                <a href="https://youtube.com/SchmidtOcean" target="_blank" rel="noopener">YouTube</a>
-                <a href="https://x.com/SchmidtOcean" target="_blank" rel="noopener">X</a>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <small>Sitio no oficial Uruguay Sub200 | © Roman Ferrero</small>
-            <a class="to-top" href="#top">Volver arriba ↑</a>
-        </div>
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+    </div>
 </body>
 
 </html>
