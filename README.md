@@ -1,31 +1,52 @@
-<h1 align="left">Uruguay Sub 200 | Project CoderHouse</h1>
+# 🌊 Uruguay Sub200
 
-###
+Sitio web responsive sobre **Uruguay Sub200**, una expedición científica de exploración del fondo marino uruguayo a bordo del buque de investigación **B/I Falkor (too)**. El proyecto abarca investigación, alfabetización oceánica y conservación de ecosistemas marinos.
 
-<p align="left">This project is a responsive website about Uruguay Sub 200, an expedition to the Uruguayan seabed. The site invites users to explore the mission through photos, live streams, and relevant information, offering an interactive way to learn more about the expedition and its discoveries.</p>
+> Proyecto final del curso de **Desarrollo Web** en [Coderhouse](https://www.coderhouse.com/).
 
-###
+---
 
-<h2 align="left">About me</h2>
+## 📄 Páginas
 
-###
+| Página | Descripción |
+|--------|-------------|
+| **Inicio** | Presentación del proyecto, carousel hero, pilares de la expedición y organizaciones colaboradoras. |
+| **Expedición** | Detalle del equipo científico, áreas de investigación y tecnologías utilizadas (ROV SuBastian, sonar multihaz). |
+| **Multimedia** | Transmisiones de YouTube, clips, podcasts y galería fotográfica de la expedición. |
+| **Contacto** | Formulario de contacto para consultas y colaboración. |
 
-<p align="left">📚 Currently studying Systems Engineering and CoderHouse Full-Stack Developer.<br>🎲 Fun fact: Aguante el Club Nacional de Football !!</p>
+---
 
-###
+## 🛠️ Tecnologías
 
-<h3 align="left">I code this project with</h3>
+- **HTML5** — Estructura semántica y accesible.
+- **SASS (SCSS)** — Estilos organizados con arquitectura modular (abstracts, base, layout, components, pages).
+- **Bootstrap 5.3** — Grilla responsive, navbar, carousel y utilidades.
+- **CSS Grid & Flexbox** — Layouts personalizados complementarios a Bootstrap.
+- **Git** — Control de versiones con ramas `main` y `develop`.
 
-###
+---
 
-<div align="left">
-  <img src="https://cdn.simpleicons.org/css/1572B6" height="40" alt="css logo"  />
-  <img width="12" />
-  <img src="https://cdn.simpleicons.org/html5/E34F26" height="40" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" alt="bootstrap logo"  />
-  <img width="12" />
-  <img src="https://cdn.simpleicons.org/git/F05032" height="40" alt="git logo"  />
-</div>
+## 🚀 Cómo verlo
 
-###
+1. Cloná el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/coderhouse-desarrolloweb.git
+   ```
+2. Abrí `index.html` en tu navegador.
+
+> No requiere servidor ni dependencias adicionales. Los estilos ya están compilados en `css/main.css`.
+
+---
+
+## 👤 Autor
+
+**Roman Ferrero**
+
+📚 Estudiante de Ingeniería en Sistemas | Full-Stack Developer en Coderhouse
+
+---
+
+<p align="center">
+  <sub>Sitio no oficial — Uruguay Sub200 | © Roman Ferrero</sub>
+</p>
